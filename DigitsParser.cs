@@ -8,31 +8,52 @@ namespace BankOCR
 {
     class DigitsParser
     {
-        public string[][] Splitted { get; set; } 
-        public string[][] SplitLines(string[] Lines)
+        public class UparsedNumber
         {
-            Splitted = new string[3][];
-            for (int i = 0;i != 3; i++)
-            {
-                Splitted[i] = new string[9];
-                for (int j = 0;j != 9; j++)
-                {
-                    for(int k = 0;k != Lines.Length; k++)
-                    {
-                        Splitted[i][j] = Splitted[i][j] + Lines[j][k];
-                        if(k % 2 == 0)
-                        {
-                            j++;
-                        }
-                        if(j % 2 == 0)
-                        {
-                            i++;
-                        }
+            string[] Lines = new string[3];
 
+            public bool IsLengthValid()
+            {
+                if (Lines.Length != 3)
+                {
+                    return false;
+                }
+                for(int i =0; i != 3; i++)
+                {
+                    if (Lines[i].Length != 3)
+                    {
+                        return false;
                     }
                 }
+                return true;
             }
-            return null;
+
+            // the same as IsLengthValid but via System.Linq
+            public bool IsLengthValid2()
+            {
+                return Lines.Length == 3 &&
+                    Lines.All(i => i.Length == 3);
+            }
+        }
+
+
+        public UparsedNumber[] SplitLines(string[] Lines)
+        {
+            var result = new UparsedNumber[9]; 
+            for(int i =0; i != 9; i++)
+            {
+                result[i] = new UparsedNumber();
+            }
+
+            for (int i = 0;i != 3; i++)
+            {
+                for (int j = 0;j != 9; j++)
+                {
+                    // TODO: Finish me
+                    throw new NotImplementedException("Finish me");
+                }
+            }
+            return result;
         }
     }
 }

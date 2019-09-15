@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29001.49
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2018
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankOCR", "BankOCR.csproj", "{37FE9586-8F07-4BB8-865B-B8FCBDF3AB20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankOCR.Test", "BankOCR.Test\BankOCR.Test.csproj", "{263DB295-BE1E-495C-B04F-F8E3198BD7BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{37FE9586-8F07-4BB8-865B-B8FCBDF3AB20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37FE9586-8F07-4BB8-865B-B8FCBDF3AB20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37FE9586-8F07-4BB8-865B-B8FCBDF3AB20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{263DB295-BE1E-495C-B04F-F8E3198BD7BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{263DB295-BE1E-495C-B04F-F8E3198BD7BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{263DB295-BE1E-495C-B04F-F8E3198BD7BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{263DB295-BE1E-495C-B04F-F8E3198BD7BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

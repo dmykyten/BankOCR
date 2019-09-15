@@ -8,10 +8,11 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>BankOCR</RootNamespace>
     <AssemblyName>BankOCR</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -50,6 +51,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="useCases\000000000.txt" />
+    <Content Include="useCases\111111111.txt" />
+    <Content Include="useCases\123456789.txt" />
+    <Content Include="useCases\222222222.txt" />
+    <Content Include="useCases\333333333.txt" />
+    <Content Include="useCases\444444444.txt" />
+    <Content Include="useCases\555555555.txt" />
+    <Content Include="useCases\666666666.txt" />
+    <Content Include="useCases\777777777.txt" />
+    <Content Include="useCases\888888888.txt" />
+    <Content Include="useCases\999999999.txt" />
+    <Content Include="useCases\invalid_length.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

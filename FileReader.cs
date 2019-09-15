@@ -7,7 +7,7 @@ using System.IO;
 
 namespace BankOCR
 {
-    class FileReader
+    public class FileReader
     {
         public string[] Lines { get; private set; }
         public bool IsOkay { get; private set; }
@@ -16,7 +16,11 @@ namespace BankOCR
             if (File.Exists(FilePath))
             {
                 Lines = File.ReadAllLines(FilePath);
-                for(int i = 0;i <= 2; i++)
+                if(Lines.Length % 3 != 0) {
+                    IsOkay = false;
+                    return ;
+                }
+                for(int i = 0;i < Lines.Length; i++)
                 {
                     if (Lines[i].Length == 27)
                     {
